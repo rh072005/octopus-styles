@@ -40,7 +40,7 @@ Change to the cloned repository
 cd octopus-styles
 ~~~
 
-Build the repository (it uses [Cake]("http://cakebuild.net/")) - This builds OctopusStyles.dll to an artifacts folder in the root of the repository
+Build the repository (it uses [Cake](http://cakebuild.net/)) - This builds OctopusStyles.dll to an artifacts folder in the root of the repository
 ~~~
 cake
 ~~~
