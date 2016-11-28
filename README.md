@@ -3,6 +3,8 @@ A couple of Octopus Deploy CSS tweaks bundled together as an extension
 
 This repository aims to kill two birds with one stone; it gives me an opportunity to build an Octopus Deploy extension whilst also providing a couple of minor UI tweaks that aim to improve the Octopus experience.
 
+**Note**: You must be running version 3.5 or higher of Octopus to make use of extensions
+
 ## CSS changes
 ### Improve dashboard font
 In version 3.4 of Octopus the font weighting was changed on the dashboard and some users (myself included) have since found it more difficult to read the deployment dates <sup>[[1]](https://help.octopusdeploy.com/discussions/problems/47286-dashboard-font) [[2]](https://octopusdeploy.uservoice.com/forums/170787-general/suggestions/15819517-change-the-fonts-in-the-3-4-dashboard)</sup>.
