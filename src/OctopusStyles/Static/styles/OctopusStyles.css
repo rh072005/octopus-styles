@@ -1,0 +1,8 @@
+﻿.deployment-square .release-date {
+    font-weight: 600;
+}
+
+.SuccessWithWarnings .status-overlay {
+    font-size: 17px;
+    color: yellow;
+}
