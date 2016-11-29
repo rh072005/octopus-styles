@@ -1,4 +1,6 @@
 # Octopus Styles
+[![Build status](https://ci.appveyor.com/api/projects/status/ls1ahk6jcyxb2u3i?svg=true)](https://ci.appveyor.com/project/rh072005/octopus-styles)
+
 A couple of Octopus Deploy CSS tweaks bundled together as an extension
 
 This repository aims to kill two birds with one stone; it gives me an opportunity to build an Octopus Deploy extension whilst also providing a couple of minor UI tweaks that aim to improve the Octopus experience.
