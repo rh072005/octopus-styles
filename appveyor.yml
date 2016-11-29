@@ -12,9 +12,12 @@ cache:
 build_script: 
   - ps: .\build.ps1
 
+after_build:
+  - ps: $env:ARTIFACT_NAME = if($env:APPVEYOR_REPO_TAG_NAME){"OctopusStyles_$($env:APPVEYOR_REPO_TAG_NAME)"} else {"OctopusStyles_$($env:APPVEYOR_REPO_COMMIT)-pre"}
+
 artifacts: 
   - path: artifacts
-    name: OctopusStyles-%APPVEYOR_REPO_TAG_NAME%
+    name: %ARTIFACT_NAME%
 
 deploy:
   - provider: GitHub
