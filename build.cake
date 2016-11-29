@@ -23,7 +23,7 @@ var versionInfo = GitVersion(new GitVersionSettings { UpdateAssemblyInfo = true 
 Setup(ctx =>
 {
 	// Executed BEFORE the first task.
-	Information("Tribble Cake");
+	Information("Octopus Styles");
 });
 
 Teardown(ctx =>
