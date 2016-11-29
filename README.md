@@ -32,7 +32,21 @@ Just in case you're wondering what both of the above look like together
 | ------                                        | ----- |
 | ![Both before](art/dashboard-before.png) | ![Both After](art/both-after.png)
 
-## Building and installing the extension
+## Installing the extension
+
+The easiest way to get started to to download and extract OctopusStyles-x.x.x.zip from the [latest release](/releases/latest)
+
+To install the extension you'll need to copy OctopusStyles.dll to %ProgramData%\Octopus\CustomExtensions
+
+You will have to restart your Octopus Server service using Octopus Manager to load the new extension
+
+To verify that the extension has been loaded go to Octopus --> Configuration --> Diagnostics and the list of loaded extensions appear on the right hand side.
+
+To uninstall the module simply delete OctopusStyles.dll from the CustomExtensions folder and restart the Octopus Server.
+
+For further installation information see the Octopus documentation at [http://docs.octopusdeploy.com/display/OD/Installing+a+custom+server+extension](http://docs.octopusdeploy.com/display/OD/Installing+a+custom+server+extension)
+
+## Building the extension
 
 Clone the repository (or download the latest zip)
 ~~~
@@ -48,13 +62,3 @@ Build the repository (it uses [Cake](http://cakebuild.net/)) - This builds Octop
 ~~~
 cake
 ~~~
-
-To install the extension you'll need to copy OctopusStyles.dll to %ProgramData%\Octopus\CustomExtensions
-
-You will have to restart your Octopus Server service using Octopus Manager to load the new extension
-
-To verify that the extension has been loaded go to Octopus --> Configuration --> Diagnostics and the list of loaded extensions appear on the right hand side.
-
-To uninstall the module simply delete OctopusStyles.dll from the CustomExtensions folder and restart the Octopus Server.
-
-For further installation information see the Octopus documentation at [http://docs.octopusdeploy.com/display/OD/Installing+a+custom+server+extension](http://docs.octopusdeploy.com/display/OD/Installing+a+custom+server+extension)
