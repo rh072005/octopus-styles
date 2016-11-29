@@ -17,7 +17,7 @@ after_build:
 
 artifacts: 
   - path: artifacts
-    name: %ARTIFACT_NAME%
+    name: ARTIFACT_NAME
 
 deploy:
   - provider: GitHub
