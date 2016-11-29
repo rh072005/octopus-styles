@@ -17,11 +17,9 @@ artifacts:
     name: OctopusStyles
 
 deploy:
-    # Deploy to GitHub Releases
   - provider: GitHub
     artifact: /.*\.zip/
     draft: false
     prerelease: false
     on:
-      branch: master
       appveyor_repo_tag: true
