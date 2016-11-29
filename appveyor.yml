@@ -21,6 +21,7 @@ artifacts:
 
 deploy:
   - provider: GitHub
+    description: Release of Octopus Styles version %ARTIFACT_NAME%
     auth_token:
       secure: CZPwJ5Drp8oJgH/1E39lwB8lCtmwDNf87VKQXkfekB13Cx3i0rOzJfiWZ+t5MqHS
     artifact: /.*\.zip/
