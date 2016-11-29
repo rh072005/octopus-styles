@@ -34,7 +34,7 @@ Just in case you're wondering what both of the above look like together
 
 ## Installing the extension
 
-The easiest way to get started is to download and extract OctopusStyles-x.x.x.zip from the [latest release](/releases/latest)
+The easiest way to get started is to download and extract OctopusStyles-x.x.x.zip from the [latest release](../../releases/latest)
 
 To install the extension you'll need to copy OctopusStyles.dll to %ProgramData%\Octopus\CustomExtensions
 
