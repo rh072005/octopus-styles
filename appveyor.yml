@@ -2,6 +2,8 @@ branches:
   only:
     - master
 
+skip_tags: false
+
 init:
   - git config --global core.autocrlf input
 
