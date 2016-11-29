@@ -14,6 +14,7 @@ build_script:
 
 artifacts: 
   - path: artifacts
+  - name: OctopusStyles
 
 deploy:
     # Deploy to GitHub Releases
