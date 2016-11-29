@@ -6,7 +6,7 @@ init:
   - git config --global core.autocrlf input
 
 cache:
-  - packages -> **\packages.config
+  - src\packages -> **\packages.config
   - tools -> build.cake
 
 build_script: 
@@ -14,7 +14,7 @@ build_script:
 
 artifacts: 
   - path: artifacts
-    name: OctopusStyles
+    name: OctopusStyles_$(appveyor_repo_tag_name)
 
 deploy:
   - provider: GitHub
