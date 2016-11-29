@@ -14,7 +14,7 @@ build_script:
 
 artifacts: 
   - path: artifacts
-    name: OctopusStyles_$(appveyor_repo_tag_name)
+    name: OctopusStyles_$(APPVEYOR_REPO_TAG_NAME)
 
 deploy:
   - provider: GitHub
