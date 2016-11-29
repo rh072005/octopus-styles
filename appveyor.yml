@@ -9,7 +9,8 @@ cache:
   - packages -> **\packages.config
   - tools -> build.cake
 
-build_script: .\build.ps1
+build_script: 
+  - ps: .\build.ps1
 
 artifacts: 
   - path: artifacts
