@@ -1,0 +1,25 @@
+branches:
+  only:
+    - master
+
+init:
+  - git config --global core.autocrlf input
+
+cache:
+  - packages -> **\packages.config
+  - tools -> build.cake
+
+build_script: .\cake.cmd
+
+artifacts: 
+  - path: artifacts
+
+deploy:
+    # Deploy to GitHub Releases
+  - provider: GitHub
+    artifact: /.*\.zip/
+    draft: false
+    prerelease: false
+    on:
+      branch: master
+      appveyor_repo_tag: true
