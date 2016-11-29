@@ -2,8 +2,6 @@ branches:
   only:
     - master
 
-skip_tags: false
-
 init:
   - git config --global core.autocrlf input
 
@@ -20,6 +18,8 @@ artifacts:
 
 deploy:
   - provider: GitHub
+    auth_token:
+      secure: CZPwJ5Drp8oJgH/1E39lwB8lCtmwDNf87VKQXkfekB13Cx3i0rOzJfiWZ+t5MqHS
     artifact: /.*\.zip/
     draft: false
     prerelease: false
