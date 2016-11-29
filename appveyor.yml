@@ -4,6 +4,7 @@ branches:
 
 init:
   - git config --global core.autocrlf input
+    ps: $env:ARTIFACT_NAME = if($env:APPVEYOR_REPO_TAG_NAME){$env:APPVEYOR_REPO_TAG_NAME} else {"$($env:APPVEYOR_REPO_COMMIT)-pre"}
 
 cache:
   - src\packages -> **\packages.config
@@ -13,11 +14,11 @@ build_script:
   - ps: .\build.ps1
 
 after_build:
-  - ps: $env:ARTIFACT_NAME = if($env:APPVEYOR_REPO_TAG_NAME){"OctopusStyles_$($env:APPVEYOR_REPO_TAG_NAME)"} else {"OctopusStyles_$($env:APPVEYOR_REPO_COMMIT)-pre"}
+  - ps: $env:ARTIFACT_NAME = if($env:APPVEYOR_REPO_TAG_NAME){$env:APPVEYOR_REPO_TAG_NAME} else {"$($env:APPVEYOR_REPO_COMMIT)-pre"}
 
 artifacts: 
   - path: artifacts
-    name: ARTIFACT_NAME
+    name: OctopusStyles_%ARTIFACT_NAME%
 
 deploy:
   - provider: GitHub
