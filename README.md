@@ -5,7 +5,17 @@ A couple of Octopus Deploy CSS tweaks bundled together as an extension
 
 This repository aims to kill two birds with one stone; it gives me an opportunity to build an Octopus Deploy extension whilst also providing a couple of minor UI tweaks that aim to improve the Octopus experience.
 
-**Note**: You must be running version 3.5 or higher of Octopus to make use of extensions
+## Versioning
+
+**Note**: You must be running version 3.5.0 or higher of Octopus to make use of extensions
+
+The version of [Octopus.Server.Extensibility](https://www.nuget.org/packages/Octopus.Server.Extensibility/) referenced by Octopus Stlyes must match the version that is shipped with the version of the Octopus Server you are installing it in to. 
+
+Versions 3.5.0 to 3.7.2 (inclusive) ship with version 1.x.x and require version 1.x.x of Octopus Styles.
+
+Versions 3.7.3 and upwards ship with version 2.x.x and require version 2.x.x of Octopus Styles (not yet released)
+
+If the versions mismatch the Octopus Server Windows Service will fail to start.
 
 ## CSS changes
 ### Improve dashboard font
