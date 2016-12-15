@@ -13,7 +13,7 @@ The version of [Octopus.Server.Extensibility](https://www.nuget.org/packages/Oct
 
 Versions 3.5.0 to 3.7.2 (inclusive) ship with version 1.x.x and require version 1.x.x of Octopus Styles.
 
-Versions 3.7.3 and upwards ship with version 2.x.x and require version 2.x.x of Octopus Styles (not yet released)
+Versions 3.7.3 and upwards ship with version 2.x.x and require version 2.x.x of Octopus Styles.
 
 If the versions mismatch the Octopus Server Windows Service will fail to start.
 
